@@ -28,6 +28,11 @@ watcher.on('services', function (services) {
 });
 ```
 
+### Service configuration
+
+Watcher looks for service configuration data in Consul key-value store under key: "service/[service name]/[service id]/". 
+If found, configuration data are appended to a service JSON, under key "Data". 
+
 ### TODO
 
 docs :-)
